@@ -44,15 +44,7 @@ public class Main {
                 @Override
                 public void tableChanged(TableModelEvent e) {
 
-                    //System.out.println("Tablodan bir şey değişti...");
 
-                    /*
-                    JOptionPane.showMessageDialog(cerceve,
-                            "tabloda değişiklik yapıldı",
-                            "uyarı mesajı",
-                            JOptionPane.WARNING_MESSAGE);
-
-                     */
                     int n = JOptionPane.showConfirmDialog(
                             cerceve,
                             "değişiklikler daydedilsin mi",
@@ -60,8 +52,8 @@ public class Main {
                             JOptionPane.YES_NO_OPTION);
                     if (n==0)
                     {
-                        System.out.println(tablo.getValueAt(tablo.getSelectedRow(),tablo.getSelectedColumn()));
-                        System.out.println(tablo.getValueAt(tablo.getSelectedRow(),0));
+                        // System.out.println(tablo.getValueAt(tablo.getSelectedRow(),tablo.getSelectedColumn()));
+                        // System.out.println(tablo.getValueAt(tablo.getSelectedRow(),0));
                         String degisen = String.valueOf(tablo.getValueAt(tablo.getSelectedRow(),tablo.getSelectedColumn()));
                         String degisenID = String.valueOf(tablo.getValueAt(tablo.getSelectedRow(),0));
                         String sorgu;
